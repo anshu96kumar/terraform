@@ -1,7 +1,6 @@
 provider "aws"{
     region = "ap-south-1"
-    access_key = "AKIAWIDGFHWB2GYZORCL"
-    secret_key = "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"
+
 }
 
 variable vpc_cidr_block {}
@@ -128,5 +127,5 @@ resource "aws_instance" "myapp-ec2" {
 output "server_ip" {
   value       = aws_instance.myapp-ec2.public_ip
 }
-    
+
 
